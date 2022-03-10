@@ -1,0 +1,26 @@
+ <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="profile-tab">
+			    <form method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name"  class="form-control" name="name" required="required"/>
+                    </div>
+					
+					<div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" class="form-control"  required/>
+                    </div>
+					
+                   <div class="form-group">
+                      <label for="pwd">Password:</label>
+                     <input type="password" name="password" class="form-control" id="pwd" required/>
+                   </div>
+				   
+				   <div class="form-group">
+                      <label for="mobile">Mobile</label>
+                      <input type="tel" id="mobile" class="form-control" name="mobile"  placeholder="" required>
+                    </div>
+ 
+                  <button type="submit" name="register" style="background:#ED2553; border:1px solid #ED2553;" class="btn btn-primary">Create New Account</button>
+                  <div class="footer" style="color:red;"><?php if(isset($ermsg)) { echo $ermsg; }?><?php if(isset($ermsg2)) { echo $ermsg2; }?></div>
+			 </form>
+			</div>
